@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;;
+}
+section{
+    display: flex;
+    background-image: url("https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: whitesmoke;
+    justify-content: space-between;
+    animation: bac;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-duration: 50s;
+    animation-direction: alternate;
+}
+@keyframes bac {
+    0%{
+    background-image:url("https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-size: 100% 100vh;
+    }
+    10%{
+    background-image:url("https://cdn.stocksnap.io/img-thumbs/960w/food-dessert_F6DNP46F78.jpg");
+    background-size: 100% 100vh;
+    }
+     20%{
+    background-image:url("https://cdn.stocksnap.io/img-thumbs/960w/raspberries-berry_Z6P27ZBPN2.jpg");
+    background-size: 100% 100vh;
+    } 30%{
+    background-image:url("https://cdn.stocksnap.io/img-thumbs/960w/pumpkin-autumn_AMT1NIQBIT.jpg");
+    background-size: 100% 100vh;
+    } 40%{
+    background-image:url("https://cdn.stocksnap.io/img-thumbs/960w/fruit-oranges_NKJCDSIIRB.jpg");
+    background-size: 100% 100vh;
+    } 50%{
+    background-image:url("https://cdn.stocksnap.io/img-thumbs/960w/strawberry-plant_HYBOHSMYIB.jpg");
+    background-size: 100% 100vh;
+    } 60%{
+    background-image:url("https://cdn.stocksnap.io/img-thumbs/960w/pineapple-fruit_I3QLKL6REZ.jpg");
+    background-size: 100% 100vh;
+    } 70%{
+    background-image:url("https://cdn.stocksnap.io/img-thumbs/960w/homemade-pie_TUKUBAALHJ.jpg");
+    background-size: 100% 100vh;
+    } 80%{
+    background-image:url("https://cdn.stocksnap.io/img-thumbs/960w/macaroon-cookies_LJBZONODJR.jpg");
+    background-size: 100% 100vh;
+    }
+    90%{
+    background-image:url("https://cdn.stocksnap.io/img-thumbs/960w/nature-food_AUVLL0XR1V.jpg");
+    background-size: 100% 100vh;
+    }
+    100%{
+    background-image:url("https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-size: 100% 100vh;
+    }
+}
+
+/* Hospital Input */
+
+#patient-details{
+    background-color: rgba(26, 28, 29, 0.831);
+    flex-basis: 30%;
+    height: 55%;
+    padding: 20px;
+    border: 2px ridge rgb(123, 166, 168);
+    box-shadow: 2px 2px 5px 2px rgb(146, 145, 145);
+    border-radius: 0px 40px 40px 0;
+}
+#patient-details{
+    position: absolute;
+    /* left: 50%; */
+    top:60%;
+    transform: translate(0,-50%);
+}
+
+form>h4{
+    padding-bottom:0px;
+}
+form>h2{
+    padding-bottom:10px;
+}
+h2>i{
+    color: goldenrod;
+}
+input{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 3vh;
+    width: 15vw;
+}
+input
+form div span{
+    border: 1px ridge grey;
+    padding: 2px;
+    border-radius: 10px;
+    transition: 0.4s all ease-in-out;
+}
+form div span:hover{
+    background-color: cadetblue;
+    cursor: pointer;
+    transition: 0.8s all ease-in-out;
+}
+button{
+    background-color: inherit;
+    padding: 8px;
+    color: gold;
+    border: 1px solid rgba(218, 165, 32, 0.721);
+    border-radius: 10px;
+}
+button:hover{
+    background-color: goldenrod;
+    border: 1px solid black;
+    color: black;
+}
+h1{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 900;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    background-color: rgba(62, 69, 69, 0.738);
+    padding: 10px;
+    border: 1px solid rgba(245, 245, 245, 0.673);
+    border-radius: 0px 0px 20px 20px;
+}
+h1>i{
+    color: goldenrod;
+}
+/* Patient Bill */
+#patient-bill{
+    flex-basis: 70%;
+    height: inherit;
+}
+#patient-bill table{
+    width: 50%;
+    height: 75vh;
+    background-color: rgb(220, 245, 244);
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    border: 2px solid grey;
+    border-collapse: collapse;
+}
+#patient-bill{
+    display: none;
+}
+.down th{
+    border-bottom: 2px solid grey;
+    padding: 10px;
+}
+#patient-bill table .left{
+    text-align: left;
+}
+#patient-bill table .right{
+    text-align: right;
+}
+#patient-bill table .center{
+    font-size: 30px;
+}
+thead{
+    background-color: rgb(176, 186, 189);
+}
+tbody td{
+    border: 1px solid lightgray;
+    text-align: center;
+}
+.amt{
+    text-align: right;
+}
+#Test-note{
+    position: absolute;
+    top:70%;
+    left:18%;
+    font-size: smaller;
+    background-color: rgba(36, 36, 36, 0.697);
+    color: white;
+    display: none;
+}
+#tests>option{
+    font-size: x-small;
+}

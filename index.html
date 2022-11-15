@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menoj Eatery</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  </head>
+  <body>
+    <section>
+      <article id="patient-details">
+        <form action="#">
+          <h2><i class="fa-solid fa-pepper-hot"></i> Menoj Eatery</h2>
+          <h4><u>Order Details</u></h4>
+          <div id="patient-Name">
+          <input type="text" id="entry" placeholder="Customer Name" /> <br>
+          <small id="pref">
+            Veg <input type="radio" id="vegan" name="vegan" placeholder="Add Patient Name" style="height: 10%; width: 10%;accent-color: goldenrod;" value="veg" />
+            Non-Veg <input type="radio" id="vegan" name="vegan" placeholder="Add Patient Name" style="height: 10%; width: 10%;accent-color: goldenrod;" value="non-veg" />
+          </small>
+          </div>
+          <div>
+            <input list="tests" disabled placeholder="Select your Cravings" id="tList" />
+            <datalist id="tests"></datalist>
+          <span style="font-size:smaller; color: goldenrod; padding:20px">Added Foods</span>
+          </div>
+          <div><textarea type="text" placeholder="Add Delivery Instruction" style="width: 60%; height: 10%;"></textarea></div>
+          <button style="float: right;">Order Now</button>
+        </form>
+      </article>
+      <div id="Test-note">
+        <ul>
+          <h3>Added Items</h3>
+        </ul>
+      </div>
+      <article id="patient-bill">
+        <table>
+          <thead>
+            <tr>
+              <th class="left" colspan="2">Ph:1234567890</th>
+              <th class="right" id="date" colspan="2">Date</th>
+            </tr>
+            <tr>
+              <th colspan="4" class="center">
+                <i class="fa-solid fa-bowl-food"></i> &nbsp; Menoj
+                Eatery &nbsp;
+              </th>
+            </tr>
+            <tr class="down">
+              <th class="left" id="bill" colspan="2"></th>
+              <th class="right" id="name" colspan="3"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: center; width: 10%">
+                <b><u>Sl No</u></b>
+              </td>
+                <td style="text-align: center; width: 10%">
+                <b><u>Dish</u></b>
+              </td>
+              <td style="text-align: center; width: 60%">
+                <b><u>Foods Ordered</u></b>
+              </td>
+              <td style="text-align: center">
+                <b><u>Amount</u></b>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td
+                colspan="3"
+                style="text-align: right; font-weight: 700; height: 40px"
+              >
+                Grand Total
+              </td>
+              <td
+                id="tot"
+                style="text-align: center; font-weight: 700; font-size: 25px"
+              >
+                800
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+    </section>
+    <h1><i class="fa-solid fa-pepper-hot"></i> Menoj Eatery</h1>
+    <script src="./app.js"></script>
+    <script src="./test.js"></script>
+  </body>
+</html>
