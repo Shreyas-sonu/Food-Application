@@ -32,7 +32,7 @@ small.addEventListener("change", e => {
         dishes.innerHTML += `<option class="foods" value=${e.name}>${e.price}</option>`;
       });
     } else {
-      inp.setAttribute("disabled", true);
+      inp.setAttribute("disabled",true);
     }
     inp.addEventListener("change", e => {
       let val = e.target.value;
